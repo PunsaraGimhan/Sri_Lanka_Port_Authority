@@ -1,0 +1,171 @@
+body {
+  background-color: #54beff;
+}
+
+.rackformpage04 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.formcard04 {
+  width: 70%;
+  height: 50%;
+  max-width: 800px;
+  margin-left: 30%;
+  margin-top: 3%;
+  padding: 40px;
+  text-align: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+
+     background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.395),
+    rgba(255, 255, 255, 0.322)
+  );
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.iconcircle04 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iconcircle04 img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.formrow04 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.formgroup04 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+}
+
+.AI04 {
+  text-align: left;
+  font-size: 15px;
+  font-style: Roboto Slab;
+}
+
+.AF04 {
+  font-style: Roboto Slab;
+}
+
+label {
+  font-size: 15px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+input {
+  width: 85%;
+  height: 25px;
+  border: 2px solid #7ed5ff;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #0062ff;
+}
+
+select {
+  color: #7f7f7f;
+  width: 93%;
+  height: 47px;
+  border: 2px solid #7ed5ff;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+select:focus {
+  border-color: #0062ff;
+}
+
+option {
+  border-radius: 10px;
+}
+
+.buttonrow04 {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 15px 60px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Safe04 {
+  margin-right: 70px;
+  background-color: #33b6ff;
+  color: white;
+}
+
+.Safe04:hover {
+  background-color: #0098e6;
+}
+
+.Rest04 {
+  margin-left: 40px;
+  background-color: #004c8c;
+  color: white;
+}
+
+.Rest04:hover {
+  background-color: #003366;
+}
+
+.CCS04 {
+  margin-bottom: 10px;
+}
+
+.CCS04 img {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,239 @@
+.mainform{
+     background: rgba(0, 0, 0, 0.548);
+     backdrop-filter: blur(15px);
+     width: 60%;
+     height: 400px;
+     margin-left: 17%;
+     margin-top: 10%;
+     border-radius: 20px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     padding: 40px;
+     text-align: center;
+}
+
+.JCT{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     gap: 20px;
+}
+
+/* ===== FORM WRAPPER ===== */
+.SW{
+    margin-top: 2%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.SLLS {
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+.SLLS img{
+     width: 200px;
+     height: auto;
+     animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.SLT{
+     text-align: center;
+}
+
+/* ===== INPUT GROUP ===== */
+.formgroup001 {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+/* ===== ICON + LABEL ===== */
+.CCS{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CCS img{
+    width: 22px;
+    height: 22px;
+    opacity: 0.8;
+}
+
+/* ===== INPUT ===== */
+.UCT {
+     width: 100%;
+     height: 45px;
+     border: 2px solid rgba(126, 213, 255, 0.4);
+     border-radius: 12px;
+     padding: 10px 15px;
+     font-family: "Roboto Slab", serif;
+     outline: none;
+     transition: all 0.3s ease;
+     background: rgba(255, 255, 255, 0.05);
+     color: #fff;
+     backdrop-filter: blur(10px);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.UCT::placeholder {
+     color: rgba(255, 255, 255, 0.5);
+}
+
+.UCT:focus {
+     border-color: #43bdfe;
+     box-shadow: 0 0 10px rgba(67, 189, 254, 0.6);
+     transform: scale(1.02);
+}
+
+input:focus {
+     border-color: #0062ff;
+}
+
+/* ===== LABEL ===== */
+.lab{
+     font-family: "Roboto Slab", serif;
+     color: white;
+     font-size: 15px;
+     font-weight: 500;
+}
+
+/* ===== BUTTON AREA ===== */
+.ECT{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+
+/* ===== BUTTON ===== */
+.loginbtn{
+     width: 70%;
+     background: linear-gradient(135deg, #43bdfe, #0062ff);
+     border: none;
+     border-radius: 50px;
+     padding: 15px;
+     cursor: pointer;
+     font-weight: 600;
+     font-size: 16px;
+     color: #fff;
+     transition: all 0.3s ease;
+     box-shadow: 0 5px 15px rgba(0, 98, 255, 0.4);
+}
+
+.loginbtn:hover{
+     transform: translateY(-3px) scale(1.03);
+     box-shadow: 0 8px 20px rgba(0, 98, 255, 0.6);
+}
+
+.loginbtn:active{
+     transform: scale(0.97);
+}
+
+.loginbtn:disabled{
+     opacity: 0.6;
+     cursor: not-allowed;
+     box-shadow: none;
+}
+
+/* ===== TEXT ===== */
+.Sr{
+    font-size: 25px;
+    font-family: Cambria;
+    margin: 0;
+    color: #fff;
+}
+
+.Aut{
+    font-size: 35px;
+    font-family: Georgia;
+    margin: 0;
+    color: #71C8FF;
+}
+
+.La{
+    font-size: 16px;
+    font-family: Averia Serif Libre;
+    color: #fff;
+    margin: 0;
+}
+
+.Regi{
+    font-size: 15px;
+    font-family: Cambria;
+    color: #71C8FF;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .mainform{
+        width: 80%;
+        margin-left: 10%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .JCT{
+        flex-direction: column;
+    }
+
+    .SW{
+        width: 100%;
+    }
+
+    .loginbtn{
+        width: 80%;
+    }
+
+    .SLLS img{
+        width: 150px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .mainform{
+        width: 90%;
+        margin-left: 5%;
+        padding: 20px;
+    }
+
+    .SW{
+        width: 100%;
+    }
+
+    .loginbtn{
+        width: 100%;
+    }
+
+    .SLLS img{
+        width: 120px;
+    }
+
+    .Aut{
+        font-size: 28px;
+    }
+
+    .Sr{
+        font-size: 20px;
+    }
+
+    .La{
+        font-size: 14px;
+    }
+}

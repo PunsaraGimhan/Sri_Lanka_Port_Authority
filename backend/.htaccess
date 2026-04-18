@@ -1,0 +1,64 @@
+# ---- 1. RewriteEngine On කරන්න ----
+Options -Indexes
+RewriteEngine On
+
+# ---- 2. URL Rewriting (Clean URLs) ----
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# ---- 3. HTTPS Force (Live server නම් පමණයි) ----
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ---- 4. www redirect (Live server නම් පමණයි) ----
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# ---- 5. Security Headers ----
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# ---- 6. Sensitive files block කරන්න ----
+<FilesMatch "\.(env|log|sql|bak|git|htpasswd)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# ---- 7. PHP Settings ----
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 300
+php_value memory_limit 256M
+php_flag  display_errors Off
+php_flag  log_errors On
+
+# ---- 8. Custom Error Pages ----
+ErrorDocument 400 /errors/400.php
+ErrorDocument 401 /errors/401.php
+ErrorDocument 403 /errors/403.php
+ErrorDocument 404 /errors/404.php
+ErrorDocument 500 /errors/500.php
+
+# ---- 9. Browser Caching ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# ---- 10. Gzip Compression ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# ---- 11. Character Set ----
+AddDefaultCharset UTF-8
+
+# ====== End of .htaccess ======

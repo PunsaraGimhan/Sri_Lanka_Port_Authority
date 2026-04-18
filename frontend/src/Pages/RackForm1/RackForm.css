@@ -1,0 +1,137 @@
+
+.rack-form-page {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.form-card {
+  width: 70%;
+  height: 50%;
+  max-width: 800px;
+  margin-left: 30%;
+  margin-top: 5%;
+  padding: 40px;
+  text-align: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+
+     background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.395),
+    rgba(255, 255, 255, 0.322)
+  );
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+}
+
+.RI {
+  text-align: left;
+  font-size: 15px;
+  font-style: Roboto Slab;
+}
+
+.RF {
+  font-style: Roboto Slab;
+}
+
+label {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+input {
+  border: 2px solid #7ed5ff;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #00aaff;
+}
+
+.button-row-center {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.save {
+     background-color: #33b6ff;
+     color: white;
+}
+
+.save:hover {
+  background-color: #0086c9;
+}
+
+.reset {
+  background-color: #016ac0;
+  color: white;
+}
+
+.reset:hover {
+  background-color: #002a54;
+}
+
+.CCS {
+  margin-bottom: 10px;
+}
+
+.CCS img {
+  width: 20px;
+  height: 20px;
+}

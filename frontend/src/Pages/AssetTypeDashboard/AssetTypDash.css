@@ -1,0 +1,257 @@
+.RAMA{
+     background-color: white;
+     width: 12%;
+     height: 62px;
+     border-radius: 5px;
+     margin-right: 10px;
+     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+     font-family: "Roboto Slab", serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 40px;
+     font-weight: 400;
+     color: #000000;
+}
+
+.PP{
+     background: linear-gradient(45deg, #0077ff, #4888ff);
+     transition: 0.3s;
+     width: 25%;
+     height: 60px;
+     color: rgb(255, 255, 255);
+     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+     border-radius: 8px;
+     text-align: center;
+     padding: 10px;
+     font-size: 15px;
+     font-family: "Roboto Slab", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     margin-top: 0px;
+     margin-right: 20px;
+}
+
+.PP:hover{
+     background: linear-gradient(45deg,#c64aff,#6e42fe) ;
+     color: white;
+     cursor: pointer;
+     filter: brightness(1.2);
+     transform: scale(1.04);
+}
+
+.GG {
+     background-color: white;
+     width: 20%;
+     height: 42px;
+     margin-right: 20px;
+     padding: 10px;
+     text-align: center;
+     border-radius: 5px;
+     font-size: 15px;
+     margin-top: 0px;
+     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+     font-family: "Roboto Slab", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+}
+
+.NNCC{
+     width: 78%;
+     height: 80vh;
+     margin-top: 10px;
+     margin-left: 20%;
+     padding: auto;
+
+     background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.395),
+    rgba(0, 0, 0, 0.322)
+  );
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.ADash{
+     text-align: center;
+     font-family: "Roboto Slab", serif;
+     padding-top: 2%;
+     font-size: 25px;
+}
+
+.DSI{
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 0px;
+}
+
+.DDSI{
+     margin-left: 20%;
+     display: flex;
+}
+
+.hlog{
+     width: 95%;
+}
+
+.SearchBar{
+     width: 400px;
+     margin-top: 5px;
+}
+
+.SearchBar input{
+     width: 100%;
+     height: 35px;
+     border: 2px solid #7ed5ff;
+     border-radius: 8px;
+     padding: 10px;
+     font-family: "Roboto Slab", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     outline: none;
+     transition: 0.3s;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     text-align: left;
+}
+
+.SearchBar input::placeholder {
+     text-align: left;
+     font-family: "Roboto Slab", serif;
+     color: #999;
+}
+
+.SearchBar input:focus {
+     border-color: #0062ff;
+}
+
+.TH{
+     background-color: rgb(192, 192, 192);
+     height: 40px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.Hira{
+     font-family: "Roboto Slab", serif;
+     color: white;
+     font-optical-sizing: auto;
+     font-style: normal;
+     font-size: 15px;
+}
+
+table {
+  width: 95%;
+  margin: 20px auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.TWR th {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 14px;
+  white-space: normal;
+  word-break: break-word;
+  background-color: rgb(0, 157, 255);
+}
+
+tbody td {
+  text-align: center;
+  padding: 8px;
+  font-family: "Roboto Slab", serif;
+}
+
+.TWR th:nth-child(1) { width: 80px; }
+.TWR th:nth-child(2) { width: 130px; }
+.TWR th:nth-child(3) { width: 120px; }
+.TWR th:nth-child(4) { width: 100px; }
+.TWR th:nth-child(5) { width: 200px; }
+.TWR th:nth-child(6) { width: 160px; }
+
+.Buffer{
+     color: white;
+     font-family: "Roboto Slab", serif;
+}
+
+.SearchBar {
+  width: 400px;
+  margin-top: 0px;
+  height: 35px;
+  border: 2px solid #7ed5ff;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.COMO{
+     background: linear-gradient(45deg, #0077ff, #4888ff);
+     width: 25%;
+     height: 60px;
+     color: rgb(255, 255, 255);
+     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+     border-radius: 8px;
+     text-align: center;
+     padding: 10px;
+     font-size: 15px;
+     font-family: "Roboto Slab", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     margin-top: 0px;
+     margin-left: 20px;
+     transition: 0.3s;
+}
+
+.COMO:hover{
+     background: linear-gradient(45deg,#19582b,#00880b) ;
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+     transform: scale(1.04);
+}
+
+.ExcelLog{
+     margin-right: 8px;
+     vertical-align: middle;
+}
+
+.AddForm{
+     margin-right: 8px;
+     vertical-align: middle;
+}
+
+.edit-btn{
+     background: #6e42fe;
+     color: white;
+     border: none;
+     padding: 5px 10px;
+     margin-right: 5px;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+.delete-btn{
+     background: #ff3b3b;
+     color: white;
+     border: none;
+     padding: 5px 10px;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+.edit-btn:hover{
+     background: #5632d8;
+}
+
+.delete-btn:hover{
+     background: #d62828;
+}

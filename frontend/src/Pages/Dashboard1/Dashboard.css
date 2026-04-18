@@ -1,0 +1,185 @@
+.DashText {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgb(61, 216, 255);
+  text-align: center;
+}
+
+.excelboard {
+     background: rgba(0, 0, 0, 0.57);
+     -webkit-backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
+     border-radius: 8px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+     margin-left: 18%;
+     padding: 20px;
+     width: 35%;
+     height: 285px;
+     transition: 0.3s;
+}
+
+.line {
+     border: none;
+     height: 1px;
+     background-color: #ccc;
+     margin: 20px 0;
+}
+
+.excelboard:hover {
+     box-shadow: 5px 5px 15px #ffffff;
+     transition: 0.3s;
+}
+
+.boards-container {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-top: 20px;
+     gap: 15px;
+     flex-wrap: nowrap;
+}
+
+.Head {
+     font-family: "Roboto Slab", serif;
+     text-align: center;
+     font-size: 17px;
+     color: rgb(255, 255, 255);
+     margin-bottom: 10px;
+}
+
+.board {
+     padding: 5px;
+     padding-top: 15%;
+     background-color: rgb(230, 230, 230);
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+     width: 130px;
+     height: 100px;
+     border-radius: 8px;
+     color: rgb(0, 0, 0);
+     flex: 1;
+     text-align: center;
+     font-family: "Roboto Slab", serif;
+     font-size: 9px;
+     transition: 0.3s;
+}
+
+.board:hover {
+     background-color: #009dff;
+     color: white;
+     cursor: pointer;
+     transform: translateY(-6px);
+     transition: 0.3s;
+}
+
+.boardbar {
+      padding: 5px;
+      background-color: rgb(230, 230, 230);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+      width: 130px;
+      height: 50px;
+      border-radius: 8px;
+      margin-top: 18px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-family: "Roboto Slab", serif;
+      font-size: 8px;
+      transition: 0.3s;
+}
+
+.Expor {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: "Roboto Slab", serif;
+     font-size: 8px;
+     color: rgb(0, 0, 0);
+     transition: 0.3s;
+}
+
+.Expor:hover {
+     color: white;
+}
+
+.boardbar:hover {
+     background-color: #009dff;
+     color: white;
+     cursor: pointer;
+     transform: translateY(-6px);
+     transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .excelboard {
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+  }
+
+  .boards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .excelboard {
+    margin-left: 5%;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .boards-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .board,
+  .boardbar {
+    width: 45%;
+    min-width: auto;
+  }
+
+  .board {
+    padding-top: 10%;
+    font-size: 10px;
+  }
+
+  .boardbar {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .excelboard {
+    margin-left: 2%;
+    width: 96%;
+    padding: 10px;
+  }
+
+  .boards-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .board,
+  .boardbar {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .board {
+    padding-top: 15%;
+    font-size: 12px;
+  }
+
+  .boardbar {
+    font-size: 11px;
+  }
+
+  .Head {
+    font-size: 15px;
+  }
+}

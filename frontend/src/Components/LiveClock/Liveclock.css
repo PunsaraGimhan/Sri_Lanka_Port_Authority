@@ -1,0 +1,28 @@
+.clock-card {
+  margin-bottom: 40px;
+  min-width: 220px;
+  text-align: right;
+}
+
+.clock-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.time {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.date {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.live-clock{
+  font-family: Roboto Slab;
+}
